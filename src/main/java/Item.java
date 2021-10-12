@@ -6,6 +6,14 @@ public class Item {
     private String Isbn;
     private String Price;
 
+    public Item(String title, String publisher, String yearPublished, String isbn, String price) {
+        Title = title;
+        Publisher = publisher;
+        YearPublished = yearPublished;
+        Isbn = isbn;
+        Price = price;
+    }
+
     public String getTitle() {
         return Title;
     }
@@ -46,12 +54,4 @@ public class Item {
         Price = price;
     }
 
-
-    public Item(String title, String publisher, String yearPublished, String isbn, String price) {
-        Title = title;
-        Publisher = publisher;
-        YearPublished = yearPublished;
-        Isbn = isbn;
-        Price = price;
-    }
 }
